@@ -3,17 +3,18 @@
 ## 2D bitmapa - Batmobile v garáži (GIMP)
 - fotomontáž (z prázdné garáže NTK do nabušené Batgaráže) 
 
-link:dokumentace1.adoc[Odkaz na dokumentaci]
+[Odkaz na dokumentaci](dokumentace1.adoc)
 
-image:bitmap.jpg[width=1080]
+![bitmap](bitmap.jpg)
+
 
 ## 3D model - Batmobile Tumbler (Blender)
 - 3D model známého Batmobilu z filmu The Dark Knight
 
-link:dokumentace3.adoc[Odkaz na dokumentaci]
+[Odkaz na dokumentaci](dokumentace3.adoc)
 
-image::3d.jpg[width=1080]
+![3d](3d.jpg)
 
-image::3D/edge_highlight.jpg[width=1080]
+![edge_highlight](3D/edge_highlight.jpg)
 
-image::3D/garage.jpg[width=1080]
+![garage](3D/garage.jpg)
