@@ -1,0 +1,18 @@
+= Dokumentace 2 - Batmobile (vektorizace)
+
+== První fáze: příprava
+Nejprve bylo důležité stránku obrátit na široko, aby se tam Batmobile hezky vešel. Následoval import zdrojového obrázku, 
+jeho zmenšení, aby se vešel na stránko a mohlo se začít vektorizovat.
+
+== Druhá fáze: vektorizace
+Začal jsem kolama. Použil jsem nástroj _Draw Bezier curves and straight lines_, kterým jsem nakreslil přibližný kruh,
+jenž jsem následně upravoval pomocí nástroje _Edit paths by nodes_, dokud jsem přesně nekopíroval hrany kola. Stejným 
+postupem jsem udělal vnitřek kola. Když jsem měl jedno kolo hotovo, tak jsem akorát jednotlivé části zkopíroval, malinko 
+zmenšil a přesunul je na místo druhého kola. Takto jsem udělal skoro celý obrázek, až na světla a nějaké postranní části, 
+které nedokážu lépe popsat. Na ty jsem použil nástroj _Create circles, elipses and arcs_, poněvadž se jednalo o přesné 
+kruhy, a tak byl tento nástroj naprosto ideální.
+
+== Třetí fáze: finální úpravy
+Nakonec jsem postupně vybíral jednotlivé vrstvy, dával jim černé okraje a bílou výplň a postupně je posouval v hierarchii 
+objektů tak, aby nejspodnější části, tj. ty části, které jsou víc v pozadí, byly níž než ty, které mají být před nimi. Takhle 
+mi z původní směsi čar vzniklo krásné auto.

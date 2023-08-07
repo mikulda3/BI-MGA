@@ -1,0 +1,21 @@
+{
+	"sectors": [
+		{	"path":"zzz",
+			"loop": false,
+			"timing": 3,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 9600,
+				"height": 4320
+			},
+			"images":[
+				"black.jpg",
+				"01.jpg",
+				"02.jpg"
+			]
+		}
+	]
+}

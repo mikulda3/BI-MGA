@@ -1,0 +1,19 @@
+{
+	"sectors": [
+		{	"path":"zzz",
+			"loop": false,
+			"timing": 0,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 9600,
+				"height": 4320
+			},
+			"images":[
+				"garage.jpg"
+			]
+		}
+	]
+}

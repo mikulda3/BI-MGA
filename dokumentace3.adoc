@@ -1,0 +1,83 @@
+= Dokumentace 3 - Batmobile (3D)
+
+== První fáze: Blueprinty
+Abych mohl lépe a přesněji modelovat, potřeboval jsem sehnat blueprinty Batmobilu. Chvilka googlení stačila a měl jsem náhled celkem ze 4 stran, shora, zepředu, ze strany a
+ze zadu. Zdroj byl v modro-bílém barevném provedení, což zhoršovalo viditelnost při práci s objekty, jak jsem po chvíly práce zjistil, takže jsem si musel v Gimpu upravit 
+barvy na černo-zelené. Ty jsem vložil do scény jako obrázek pozadí a pak se je snažil vyrovnat, aby souhlasily vzdálenosti a já tak mohl přepínat mezi pohledy a všude jsem
+viděl správný výsledek. Nyní jsem teprve mohl začít modelovat.
+
+== Druhá fáze: Kola
+Jako první věc na modelování jsem si vybral kola. Vložil jsem kruh a následně jsem ho pomocí _E_ rozšiřoval, pomocí _S_ zvětšoval/zmenšoval, pomocí _G_ jsem s ním pohyboval 
+a různou kombinací těchto tlačítek (dále již jako "upravil na", abych se neopakoval se stejnými operacemi) jsem dostal tvar pneumatiky první přední pneumatiky. Následně jsem 
+potřeboval vytvořit její stopu. Vložil jsem si do scény desku (plane) a tu jsem zase pomocí stejných úprav upravil na malý čtvereček. Takto jsem udělal celou řadu (později 
+jsem zjistil, že to šlo zrcadlit) a přidal jsem jim modifikátor _Array_. Pomocí křivky, kterou jsem si předem přidal tak, aby obepínala povrch pneumatiky jsem nechal pole zakřivit,
+nastavil mu fixní počet podle velikosti křivky, chvilku to šteloval a pneumatika byla po třech hodinách hotova. Pak jsem ji jen pomocí modifikátoru _Mirror_ zrcadlil na druhou 
+stranu, takže jsem měl rázem kola dvě. Stejným způsobem jsem udělal i zadní pneumatiky, ty byly trochu těžší, měly složitější vzorek. Celkem první fáze zabrala tak 6 hodin práce.
+
+== Třetí fáze: Pláty
+Po kolech jsem chtěl dát autu nějaký tvar, tak jsem začal modelovat postranní pláty. Ty jsem dělal stejným způsobem jako vzorek pneumatiky, plus jsem je modifikátorem mirror
+zrcadlil na druhou stranu. Na této části bylo nejtěžší vychytat správné rotace objektů a úhly abych se co nejvíce přiblížil originálu a auto vypadalo co nejvíce reálně. Kolik hodin
+tato část zabrala nevím a možná to ani nechci vědět, bylo to asi to nejtěžší na celém modelu.
+
+== Čtvrtá fáze: Systém předních kol
+Nyní jsem měl již pláty a kola na svých místěch, ale bylo potřeba přední kola nějak spojit s autem. Problém byl, že na žádné fotce nebylo přesně vidět to, jak jsou kola s autem 
+spojená, takže jsem si našel několik interaktivních 3D modelů Batmobilu, všechny je pečlivě prostudoval (každý byl řešen velmi odlišně) a dal se do práce. celý systém jsem řešil
+na podobný způsob jako pláty (zde jsem používal objekty jako _Plane_, _Cube_ nebo _Cylinder_). Trochu težší část bylo udělání díry skrz jeden objekt, ale jak jsem zjistil, zas tak težké
+to ve finále nebylo. V _Edit mode_ jsem nejprve rozřízl objekt na půl a odstranil všechny _Faces_ na jedné straně. Pomocí modifikátoru _Mirro_ jsem pak objekt zrcadlil, takže
+nyní stačilo upravit jednu stranu objektu a to se zároveň ukázalo na straně druhé. Pak jsem odstranil na jedné straně _Face_ a vložil jsem do scény kruh. Ten jsem naškáloval tak,
+aby jeho průměr odpovídal mým představám a pak jsem ho vložil na úroveň odstraněné strany. Pak zbývalo jen ozačit hrany kruhu a zbylé hrany té odstraněné strany a vložit tam
+automaticky _Face_. Pak jsem jen vzal okraje díry a rozšířil je, dokud se nepotkaly s okraji na druhé straně objektu. Díra byla hotova. Zbytek předního systému nepředstavoval takový
+problém, spíš to zabralo hodně času, aby to vypadalo co nejvíce věrohodně (úhly, škálování, dodělávání matic, atd.).
+
+== Pátá fáze: Střecha
+Střechu jsem dělal na stejný způsob, jako pancíř na stranách. Vložil jsem _Plane_, rozřízl ho, odstranil _Faces_ na jedné straně, přidal modifikátor _Mirror_, a pak jen už rozšiřoval
+a natáčel části podle požadované velikosti střechy. Nic extra složitého.
+
+== Šestá fáze: Turbo a zadní systém
+Každý správný Batmobile má turbo, jak jinak by chtěl Batman nahánět zločince. Proto ani model Tumbler není výjimkou. Tělo turba jsem postupně škáloval a upravoval na finální výsledek
+z původního kruhu, kterým jsem začal. Ve finále jsem akorát aplikoval modifikátor _Subdivision surface_ pro hladší dojem. Jako další jsem dělal vzhled konce turba, opět jsme použil
+_Plane_, který jsem vhodně naškáloval a dal jako u pneumatiky do pole. Zadní systém kol vznikal podobně jako přední.  Horní tyč, která přidržuje turbo a odpružení, jsem
+udělal tak, že jsem si do scény vložil krychli, v _Edit mode_ odstranil vše až na jeden vektor a ten pak rozšiřoval, dokud jsem nedostal velmi hrubý požadovaný tvar. Pomocí 
+_CRTL+Shift+B_ jsem zjemnil přechody vektorů, tedy dostal jsem zaoblený tvar, a pak jsem použil operaci _Convert curve to mesh_. Pak už jsem jen v sekci _Geometry_ upravil tloušťku
+a bylo hotovo. Pro odpružení jsem musel nejdříve vytvořit pružiny. Do scény jsem přidal _Circle_, přidal modifikátor _Screw_, zvětšil počet iterací, chvilku šteloval úhel a velikost
+a odpružení bylo na světě.
+
+== Sedmá fáze: Doplňky
+Aby auto vypadalo ještě více realisticky, snažil jsem přidat co nejvíce detailů, jako různé písty, držáky, spoilery, výfuky, "křídla", světla, okna, a další různé ozdoby v přední
+části. Postup probíhal velmi podobně jako u zbytku auta. 
+
+== Osmá fáze: Barvy a materiál
+Auto je v této fázi už hotovo, poslední bod bylo vybarvení. Nejdříve jsem to dělal přes textury a _UV Smart Unwrap_, pak mi došlo, že to vypadá velmi uměle, tak jsem se začal hrabat
+v materiálech. Většina doplňků má materiál _Glossy_, většina auta _Principled BSDF_, stejně jako kola. _Principled BSDF_ jsem vždy upravil podle potřeby a to hlavně podle _Roughness_,
+_Specular_ a _Metalic_. Konci turba jsem přidal materiál _Emission_.
+
+== Devátá fáze: Animace
+Už od začátku jsem měl nápad, že bych udělal nějakou animaci, aby to nebylo tak nudné. Rozhodl jsem se pro jednoduchý cyklus, kdy se kamera otáčí ve stejné konstantní výšce okolo
+vozidla na podstavci. Pomohl jsem si tutoriálem na Youtube: do scény jsem vložil kružnici, na ní jsem umístil kameru a pak jsem oba objekty zpároval přes _Parent_-_Follow Path_.
+Dále jsem do středu vozidla umístil _Empty_, která slouží jako bod, za kterým se kamera otáčí. To jsem nastavil přes možnost _Track to_. Nyní stačilo ruzně upravovat velikost a 
+rotaci kruhu, díky čemuž se měnilo to, co kamera viděla (vzdálenost, šířka...). Délku animace jsem v sekci _Path Animation_ pro větší plynulost nastavil na 250 snímků. Teď už 
+bylo vše připravené pro animaci.
+
+== Předposlední fáze: Prostředí
+Rozhodl jsem se udělat několik fotek pro různá pozadí: 
+
+* První byla animace. Pro ní jsem do prostředí přidal _Cylinder_, který jsem vhodně naškáloval, aby tvořil podstavec, na kterém
+se Batmobile mohl "jakoby" otáčet (takový efekt jsem očekával, samozřejmě, že se ale kamera otáčí okolo podstavce). Podstavci jsem v sekci _Material_ ubral _Roughness_, přidal 
+_Metalic_ a _Specular_ a výsledný podstavec má tak efekt odlesku, tedy Batmobil se do něj krásně odráží. Pak stačilo scénu vhodně nasvíti (pro animaci jsem přidal 4 _Sun_ a jeden
+_Area_ světla) a bylo hotovo. Pak jsem ještě trochu experimentoval, snažil se vytvořit mlhu a přidat jí nějak do scény, ale moc se tam podle mě nehodí. Někdy v budoucnu plánuji 
+scénu dodělat a využít pravý potenciál mlhy, přidat tam další auta, možná zkusit udělat Batmana, kdo ví.
+
+* Druhá scéna se snažila přibližit originálu jedné fotky z filmu, která je zachycena v garáži. Vytvořit prostředí bylo jednoduché, horší bylo vychytat světlo a vytvořit materiál
+podobný betonu. Materiál jsem dělal podle nějakých návodů, kombinoval jsem různé textury a odstíny, až vzniklo něco, co se blížilo betonu. Na stěny jsem použil trochu více
+otlučený vzorek, než na zem. Osvětlení jsem řešil pomocí panelů, kterým jsem dal materiál _Emission_ síly asi 9. Pak jsem do scény přidal _Light Probe_, a "zapekl" jsem _Indirect Lightning_.
+Díky tomu se aplikoval svit mých panelů a scéna byla tak skutečně nasvícená. Kvůli přesvícení panelů jsem zpátky stáhl jejich sílu na cca 3. To nijak nezměnilo zapečení světla a
+panely tak nijak neoslňovaly kameru. Kvůli nedostatku světla na autě jsem ještě přidal _Area_ světlo a nyní bylo skutečně hotovo.
+
+* Třetí scéna byla snaha o zachycení hran auta pomocí světla. Do scény jsem vložil _Plane_, otočil ho tak, aby tvořil pozadí auta a trochu ho naškáloval a dal mu černou matnou 
+barvu bez odrazů. Pak jsem akorát přidal dvě světla a hrál si s nima, dokud nezvýraznila hrany auta. Ve finále jsem ještě změnil materiál předních skel na _Emission_ bílé barvy,
+přišlo mi to víc "cool".
+
+== Finální fáze: Render
+Zapomněl jsem zmínit, že Pro jednotlivé scény jsem nastavil různě kameru, pro některé jsem nastavil RGBA, tedy i alfa kanál, aby se například jedna fotka dala lehce vložit do bitmapy s mojí postavou a já 
+to nemusel ještě ořezávat. Jinak jsem toho moc na renderu neupravoval, vše jsem po jedné zkušenosti, kdy se mi render animace rovnou do videa uprostřed ukončil a tím jsem tak přišel
+o celý render, renderoval přímo do snímků. Pro animaci jsem pak ve _Video Sequence Editoru_ naskládal snímky za sebe a ty znovu vyrenderoval jako animaci, což už zabralo jen chvilku.

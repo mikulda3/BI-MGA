@@ -1,0 +1,79 @@
+{
+	"sectors": [
+		{	"path":"vector",
+			"loop": false,
+			"timing": 0,
+			"position": {
+				"x": 0,
+				"y": 1080
+			},
+			"size": {
+				"width":5700,
+				"height":3240
+			},
+			"images":[
+				"bitmap.jpg"
+			]
+		},
+		{	"path":"vector",
+			"loop": true,
+			"timing": 0,
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width":5760,
+				"height":1080
+			},
+			"images":[
+				"nadpis.jpg"
+			]
+		},
+		{	"path":"vector",
+			"loop": true,
+			"timing": 0,
+			"position": {
+				"x": 5760,
+				"y": 1080
+			},
+			"size": {
+				"width":3840,
+				"height":2160
+			},
+			"images":[
+				"vektor_src.jpg"
+			]
+		},
+		{	"path":"vector",
+			"loop": true,
+			"timing": 0,
+			"position": {
+				"x": 5760,
+				"y": 0
+			},
+			"size": {
+				"width":3840,
+				"height":1080
+			},
+			"images":[
+				"vektor3.jpg"
+			]
+		},
+		{	"path":"vector",
+			"loop": true,
+			"timing": 0,
+			"position": {
+				"x": 5760,
+				"y": 3240
+			},
+			"size": {
+				"width":3840,
+				"height":1080
+			},
+			"images":[
+				"vektor2.jpg"
+			]
+		}
+	]
+}

@@ -1,0 +1,74 @@
+= Dokumentace 1 - Batmobile (bitmapa)
+
+== První fáze: focení
+Nejdůležitější část celé práce byla vhodná volba fotografií. Vzhledem k tomu, že jsem si za vozidlo vybral
+Batmobile, který není možné v České Republice v současné době nalézt a pořídit tak požadované forografie, byl
+jsem odkázán na malý výběr (kvůli požadavku nejvyšší kvality) fotografií z Googlu. Tyto fotografie jsou pořízeny
+z určitých úhlů, takže bylo opravdu důležité pořídit správné fotografie prostředí v prostorách dejvického kampusu.
+To se mi naštěstí s dopomocí kamaráda povedlo. Horší to bylo s forografií postavy. Nápad jsem měl jasný: budu se o
+Batmobile opírat nohou. Zde bylo tedy důležité získat fotografii pod správným úhlem a mít zvedlou nohu ve správné 
+výšce. No napoprvé se nám to nepovedlo, až třetí pokus byl úspěšný.
+Měl jsem tak připravenou: 
+
+* fotografii garáže NTK
+
+* mnoho fotografií své osoby
+
+* fotografii Batmobilu z Googlu
+
+== Druhá fáze: ořezávání
+Po získání fotografií jsem se konečně mohl pustit do práce v GIMPu. Nejprve jsem do nového projektu vložil pozadí a 
+následovala fotografie samotného auta. Z ní jsem auto pomocí nástroje _Free Select Tool_ nahrubo ořízl a tento 
+obrázek zkopíroval a vložil jako novou vrstvu (_To New Layer_). Ještě bylo potřeba auto trochu zmenšit, aby se vešlo,
+do obrázku a přirozeně tam sedělo. To jsem udělal pomocí nástroje _Scale Tool_. Abych auto mohl detailně oříznout,
+postupoval jsem tak, že jsem na obrázek v přehledu vrstev (_Layers_) kliknul pravým tlačítkem myši, vybral možnost 
+_Add Layer Mask_ a z nabídky vybral možnost _Transfer layer's alpha channel_. Pak už stačilo vybrat masku obrázku,
+zvolit nástroj štětec (_Paintbrush Tool_) černé barvy a opatrně odmazávat okraje. Tímto vznikl krásně ořízlý model 
+auta. Při ořezávání jsem zároveň nechal pod autem trochu stínu z původního obrázku pro budoucí práci se stíny. Tento 
+postup bude aplikován ještě několikrát při ořezávání dalších objektů, proto v textu dále jen jako _ořezávání_.
+
+== Třetí fáze: osoba
+V této fázi jsem se soustředil na mojí osobu. Ze získaných fotografií jsem měl jednoho kandidáta, jediný problém 
+byla výška pravé nohy. Noha byla moc nízko a nevystačila by na pneumatiku. Použil jsem tedy metodu _ořezávání_, a 
+zároveň jsem si ořízl celou pravou nohu, kterou jsem následně nahradil nohou z jiné fotografie. Spojil jsem tak 
+opatrně dva celky a vznikla má osoba, která teď už mnohem lépe seděla do prostředí a jejíž noha hezky dolehla na bok 
+levé přední pneumatiky vozidla.
+
+== Čtvrtá fáze: stíny vozidla
+Jako další krok jsem si zvolil dodělání stínů vozidla. Všechna světla šla zpoza vozidla, tedy bylo potřeba vylepšit 
+stíny před a pod vozidlem. Možností se nabízelo několik. Nejprve jsem si pomocí _Duplicate Layer_ zduplikoval vrstvu 
+a nastavil jí kompletně černou barvu pomocí _Colours_ -> _Brightness and Contrast_, kde jsem _Brightness_ nastavil 
+na _-127_ a _Contrast_ na _127_. Objekt tak dostal kompletně černou barvu. Poté jsem mu v tabulce _Layers_ nastavil 
+_Opacity_ (průhlednost) na hodnotu _81_, čímž se z černé stala průsvitná šedá, takže pod ní byla lehce vidět zem 
+garáže. Vrstvu jsem vložil pod vrstvu vozidla a lehce jí posunul tak, abych prodloužil stín vozidla a bylo hotovo.
+
+== Pátá fáze: světlo
+Už od začátku jsem přemýšlel nad tím, jak se zbavit odrazu světla z čelního skla vozidla. Vzhledem k tomu, že 
+světlo pokrývalo skoro celou pravou půlku vozidla (z pohledu řidiče), tak mě napadlo, že než se zbavovat světla, 
+tak si jedno přidám. A to doslova: pomocí metody _ořezávání_ jsem si vypůjčil jedno světlo ze zadních řad garáže 
+a umístil ho nad auto tak, aby to vypadalo přirozeně a světlo tak krásně osvítilo celou pravou část vozidla.
+
+== Šestá fáze: easter egg
+K této fázi toho moc psát nebudu, nechci spoilovat, ale zároven je easter egg, si myslím, dost očividný.
+
+== Sedmá fáze: zasazení do prostředí
+Auto sice mělo už svůj stín, ale pořád tam tak nějak nesedělo a to nemluvím o mé postavě. Nejprve jsem tedy dodělal 
+stín své postavě. Vzhledem k více zdrojům světla jsem udělal alespoň dva směry stínu. Oba jsem namaloval pomocí 
+nástroje štětec (_Paintbrush Tool_) tak, že jsem mu nastavil černou barvu a zmenšil mu průhlednost (_Opacity_). Po 
+chvilce měření a odhadování, kudy by ten stín asi mohl vést, jsem měl hotovo. Dále jsem se zaměřil na vozidlo. Můj 
+cíl byl namalovat na zem pozadí otisky pneumatik. To byl pro mě docela náročný úkol, nejprve jsem si pomocí metody 
+_ořezávání_ vybral část pneumatiky (obdélník). Pak jsem upravoval jeho masku, kde jsem obtahoval (mazal) jednotlivé 
+čtverečky pneumatiky. Poté jsem pomocí nástroje _Perspective Tool_ měnil perspektivu tohoto objektu, abych ho jakoby 
+zasadil na zem garáže. Najít správný úhel zabralo celkem dost času. Když se mi to povedlo, tak jsem se přepnul do 
+masky objektu a pomocí nástroje _Free Select Tool_ jsem vybral obdélník. Díky tomu, že jsem vybral masku, kterou 
+jsem předtím upravoval, se mi tak do palety štětců vložil vzor pneumatiky. S ním jsem si trochu pohrál: zvetšil 
+jsem mu velikost, zmenšil průhlednost a pak jsem se několik dlouhých minut snažil namalovat přesné trajektorie kol. 
+Zabralo mi to opravdu hodně času, protože každá trajektorie musela být kvůli perspektivě jinak velká a ne vždy se mi 
+povedlo namalovat přesné nebo alespoň uspokojivé rovnoběžky. Jako poslední efekt vozidla mě napadlo dodat trochu kouře 
+od výfuků. Opět jsem použil nástroj _Paintbrush Tool_, z palety jsem vybral vzor _Texture Hose_, upravil jsem velikost 
+a průhlednost a běhěm chvilky jsem měl kouř hotov.
+
+== Osmá fáze: finální úpravy
+Jeden z povinných úkolů bylo přidat do obrázku nějaký text. Ten jsem se rozhodl přidat pomocí nástroje _Text Tool_ do 
+levého spodního rohu, nic těžkého. Ještě jsem upravil barvy a aplikoval nějaké filtry z nabídky 
+_Colours_ a _Filtres_ a bitmapa byla hotová.
